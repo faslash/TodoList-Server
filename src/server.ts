@@ -3,11 +3,9 @@ import dotenv from "dotenv-safe";
 
 import { router } from "./routes";
 
-import { createConnection } from "typeorm";
+import "./database/connection";
 
 dotenv.config();
-
-createConnection();
 
 const PORT = process.env.SERVER_PORT;
 
