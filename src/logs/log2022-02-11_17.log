@@ -1,0 +1,50 @@
+
+Request: POST / at Fri Feb 11 2022 17:48:30 GMT-0300, IP: ::1, User Agent: insomnia/2021.7.2
+Request Body:
+{
+	"name": "Fabricio",
+	"email": "fabricio@gmail.com",
+	"password": "teste123"
+}
+Response: 404 1.506 ms 
+
+Request: POST / at Fri Feb 11 2022 17:48:32 GMT-0300, IP: ::1, User Agent: insomnia/2021.7.2
+Request Body:
+{
+	"name": "Fabricio",
+	"email": "fabricio@gmail.com",
+	"password": "teste123"
+}
+Response: 404 0.253 ms 
+
+Request: POST /users at Fri Feb 11 2022 17:50:03 GMT-0300, IP: ::1, User Agent: insomnia/2021.7.2
+Request Body:
+{
+	"name": "Fabricio",
+	"email": "fabricio@gmail.com",
+	"password": "teste123"
+}
+Response Body:
+{
+	"retorno": {
+		"codigo": 2,
+		"erro": "Usuário já cadastrado"
+	}
+}
+Response: 409 60.837 ms 
+
+Request: POST /users at Fri Feb 11 2022 17:52:47 GMT-0300, IP: ::1, User Agent: insomnia/2021.7.2
+Request Body:
+{
+	"name": "Fabricio",
+	"email": "fabricio@gmail.com",
+	"password": "teste123"
+}
+Response Body:
+{
+	"retorno": {
+		"codigo": 2,
+		"erro": "Usuário já cadastrado"
+	}
+}
+Response: 409 159.824 ms 

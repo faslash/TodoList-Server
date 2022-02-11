@@ -12,7 +12,7 @@ class UserController {
     const userExists = await repository.findOne({ where: { email } });
 
     if (userExists) {
-      return res.sendStatus(409);
+      return res.status(409).json(handleErrors(2, `Usuário já cadastrado`));
     }
 
     const created_at = new Date();
