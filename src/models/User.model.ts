@@ -16,8 +16,9 @@ export class User {
   @Column()
   password: string;
 
-  @Column()
+  @Column({ nullable: true })
   photo: string;
+  
 
   @CreateDateColumn()
   created_at: Date;
